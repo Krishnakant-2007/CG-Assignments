@@ -39,4 +39,4 @@ srcset with two sizes
 12. Create two images side by side:
 
 First image loads immediately (eager) and is a logo from assets/logo.png
-Second image loads lazily and is a product photo from images/products/shoe.jpg Both should have proper alt text and width of 250px.
+Second image loads lazily and is a product photo from images/products/shoe.jpg Both should have proper alt text and width of 250px..
