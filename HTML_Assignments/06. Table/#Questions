@@ -107,4 +107,4 @@ b) Add a meaningful caption.
 c) Use <thead>, <tbody>, and <tfoot>.
 d) Include at least one colspan and one rowspan.
 e) Use scope="col" on column headers and scope="row" on at least one row header.
-f) Optionally use id and headers for better accessibility.
+f) Optionally use id and headers for better accessibility..
