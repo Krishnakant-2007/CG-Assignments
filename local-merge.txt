@@ -1,0 +1,2 @@
+Hi!!
+Today I learned about Inheritance in python and three types of inheritance.
