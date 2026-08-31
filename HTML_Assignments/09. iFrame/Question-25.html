@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Iframe Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 70px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        iframe {
+            width: 100%;
+            flex: 1;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Device Dashboard</h1>
+    </header>
+
+    <iframe
+        src="https://www.example.com"
+        title="Interactive Device Dashboard Content"
+        allow="fullscreen; gyroscope; usb">
+    </iframe>
+
+</body>
+</html>

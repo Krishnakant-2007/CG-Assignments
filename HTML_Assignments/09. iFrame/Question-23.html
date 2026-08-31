@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Video Iframe</title>
+
+    <style>
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        @media (max-width: 600px) {
+            .video-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Responsive Video Player</h2>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Responsive Video Player"
+            allow="fullscreen; gyroscope"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>

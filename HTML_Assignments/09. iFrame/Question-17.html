@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Control</title>
+
+    <style>
+        .device-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        iframe {
+            width: 45%;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Device Control Panel</h1>
+
+    <div class="device-container">
+
+        <!-- USB Control -->
+        <iframe
+            src="https://device.example.com/embed/"
+            title="USB Device Control"
+            allow="usb">
+        </iframe>
+
+        <!-- Gyroscope Control -->
+        <iframe
+            src="https://device.example.com/embed/"
+            title="Gyroscope Device Control"
+            allow="gyroscope">
+        </iframe>
+
+    </div>
+
+</body>
+</html>
+</body>
+</html>

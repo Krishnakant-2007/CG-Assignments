@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Permission Comparison</title>
+
+    <style>
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iframe Permission Comparison</h1>
+
+    <h2>Iframe with Fullscreen Permission</h2>
+    <iframe
+        src="https://www.example.com"
+        title="Iframe with Fullscreen Permission"
+        allow="fullscreen">
+    </iframe>
+
+    <h2>Iframe with No Allow Attribute</h2>
+    <iframe
+        src="https://www.example.com"
+        title="Iframe without Additional Permissions">
+    </iframe>
+
+</body>
+</html>

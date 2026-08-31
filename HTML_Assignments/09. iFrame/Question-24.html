@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Iframe Permissions</title>
+</head>
+<body>
+
+    <h1>Three Different Iframes</h1>
+
+    <!-- First iframe: Fullscreen only -->
+    <h2>Fullscreen Iframe</h2>
+    <iframe
+        src="https://www.example.com"
+        width="800"
+        height="300"
+        title="Fullscreen Enabled Iframe"
+        allow="fullscreen">
+    </iframe>
+
+    <br><br>
+
+    <!-- Second iframe: Gyroscope only -->
+    <h2>Gyroscope Iframe</h2>
+    <iframe
+        src="https://www.example.com"
+        width="600"
+        height="350"
+        title="Gyroscope Enabled Iframe"
+        allow="gyroscope">
+    </iframe>
+
+    <br><br>
+
+    <!-- Third iframe: USB only -->
+    <h2>USB Iframe</h2>
+    <iframe
+        src="https://www.example.com"
+        width="400"
+        height="250"
+        title="USB Enabled Iframe"
+        allow="usb">
+    </iframe>
+
+</body>
+</html>

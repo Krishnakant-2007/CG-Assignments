@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Permission Comparison</title>
+
+    <style>
+        .iframe-container {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iframe Permission Comparison</h1>
+
+    <div class="iframe-container">
+
+        <!-- Version A -->
+        <div>
+            <h2>Version A: Fullscreen Only</h2>
+            <iframe
+                src="https://www.example.com"
+                title="Version A - Fullscreen Only"
+                allow="fullscreen">
+            </iframe>
+        </div>
+
+        <!-- Version B -->
+        <div>
+            <h2>Version B: All Permissions</h2>
+            <iframe
+                src="https://www.example.com"
+                title="Version B - Fullscreen Gyroscope and USB"
+                allow="fullscreen; gyroscope; usb">
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>

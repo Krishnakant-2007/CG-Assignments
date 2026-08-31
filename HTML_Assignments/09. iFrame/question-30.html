@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Best Practices</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 350px;
+            border: none;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iframe Best-Practice Examples</h1>
+
+    <!-- Normal webpage: no special permissions are needed. -->
+    <iframe
+        src="https://www.example.com"
+        title="Normal Webpage">
+    </iframe>
+
+    <!-- Interactive content: fullscreen and gyroscope access are required. -->
+    <iframe
+        src="https://www.example.com"
+        title="Interactive Content with Gyroscope"
+        allow="fullscreen; gyroscope"
+        allowfullscreen>
+    </iframe>
+
+    <!-- Device control content: USB permission is required for device access. -->
+    <iframe
+        src="https://www.example.com"
+        title="USB Device Control"
+        allow="usb">
+    </iframe>
+
+</body>
+</html>
