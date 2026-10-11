@@ -380,3 +380,174 @@ let input = "5";
 if (input !== "0") {
     console.log("Input is not the string 0");
 }
+
+
+
+
+
+
+
+
+
+// Part C] Relational Operators
+
+// 5. Greater Than (>)
+
+// 1. Student marks
+console.log(78 > 40); // true
+
+// 2. Temperature
+console.log(35 > 28); // true
+
+// 3. Predict the output
+console.log(15 > 10); // true
+console.log(10 > 15); // false
+console.log(10 > 10); // false
+
+// 4. Predict the output
+console.log("20" > 15); // true
+console.log("5" > "10"); // true
+console.log("abc" > 10); // false
+
+// 5. null and undefined
+console.log(null > 0); // false
+console.log(undefined > 0); // false
+
+// 6. Stock availability
+let stock = 120;
+let requiredItems = 85;
+console.log(stock > requiredItems); // true
+
+// 7. Predict and explain
+console.log(true > false); // true
+console.log("10" > "2"); // false
+console.log(NaN > 5); // false
+
+
+// 6. Less Than (<)
+
+// 1. Box weight
+console.log(42 < 50); // true
+
+// 2. Underage check
+console.log(16 < 18); // true
+
+// 3. Predict the output
+console.log(8 < 12); // true
+console.log(20 < 10); // false
+console.log(7 < 7); // false
+
+// 4. Predict the output
+console.log("8" < 10); // true
+console.log("20" < "3"); // true
+console.log("hello" < 5); // false
+
+// 5. null and undefined
+console.log(null < 0); // false
+console.log(undefined < 0); // false
+
+// 6. Tank water level
+let waterLevel = 375;
+let tankCapacity = 500;
+console.log(waterLevel < tankCapacity); // true
+
+// 7. Predict and explain
+console.log(false < true); // true
+console.log("5" < "15"); // false
+console.log(NaN < 10); // false
+
+
+// 7. Greater Than or Equal To (>=)
+
+
+// 1. Distinction marks
+console.log(75 >= 75); // true
+
+// 2. Ticket purchase
+console.log(300 >= 300); // true
+
+// 3. Predict the output
+console.log(25 >= 25); // true
+console.log(30 >= 25); // true
+console.log(20 >= 25); // false
+
+// 4. Predict the output
+console.log("25" >= 25); // true
+console.log("10" >= "2"); // false
+console.log(null >= 0); // true
+
+// 5. undefined comparison
+console.log(undefined >= 0); // false
+
+// 6. Lift capacity
+let people = 8;
+let maxPeople = 8;
+console.log(people >= maxPeople); // true
+
+// 7. Predict and explain
+console.log(true >= 1); // true
+console.log("" >= 0); // true
+console.log(NaN >= NaN); // false
+
+
+
+
+// 8. Less Than or Equal To (<=)
+
+// 1. Speed limit
+console.log(60 <= 60); // true
+
+// 2. Student failed
+console.log(39 < 40); // true
+
+// 3. Predict the output
+console.log(15 <= 20); // true
+console.log(20 <= 15); // false
+console.log(15 <= 15); // true
+
+// 4. Predict the output
+console.log("15" <= 20); // true
+console.log("30" <= "5"); // true
+console.log(null <= 0); // true
+
+// 5. undefined comparison
+console.log(undefined <= 0); // false
+
+// 6. Bag capacity
+let books = 10;
+let maxBooks = 10;
+console.log(books < maxBooks); // false
+// More books cannot be added without exceeding capacity.
+
+// 7. Predict and explain
+console.log(false <= 0); // true
+console.log("" <= 0); // true
+console.log(NaN <= 5); // false
+
+
+// Mixed Practice (>, <, >=, <=)
+
+// 1. Write expressions
+console.log(18 >= 18); // true
+console.log(32 < 35); // true
+console.log(90 > 85); // true
+
+// 2. Predict the outputs
+console.log(10 > 5 && 5 < 10); // true
+console.log("10" >= 10); // true
+console.log(null <= undefined); // false
+console.log("5" < "10" && 5 > 2); // false
+
+// 3. Product purchase and change
+let productPrice = 499;
+let customerMoney = 500;
+
+console.log(customerMoney >= productPrice); // true
+console.log(customerMoney > productPrice); // true
+
+let change = customerMoney - productPrice;
+console.log(change); // 1
+
+// 4. String comparison vs number comparison
+console.log("10" > "2"); // false
+console.log(10 > 2); // true
