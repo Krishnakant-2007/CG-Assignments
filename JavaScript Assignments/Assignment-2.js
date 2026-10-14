@@ -1,6 +1,6 @@
+// -------------------------SECTION-A----------------------------
+
 // Question 1
-
-
 var name = "Krishna";
 let age = 20;
 const city = "Delhi";
@@ -12,28 +12,19 @@ console.log(city);
 
 
 // Question 2
-
-
 let score = 50;
-
 score = 80;
-
 console.log(score);
 
 
 
 // Question 3
-
-
 const PI = 3.14;
-
 console.log(PI);
 
 
 
 // Question 4
-
-
 var num1;
 let num2;
 
@@ -48,9 +39,9 @@ console.log(num2);
 
 
 
+// ---------------------------------SECTION-B-------------------------------
+
 // Question 5
-
-
 const studentName = "Krishna";
 let marks = 70;
 const schoolName = "ABC School";
@@ -64,7 +55,6 @@ console.log(schoolName);
 
 
 // Question 6
-
 if (true) {
     var a = 10;
     let b = 20;
@@ -72,32 +62,22 @@ if (true) {
 }
 
 console.log(a);
-
 // console.log(b); // ReferenceError
 // console.log(c); // ReferenceError
 
 
 
 // Question 7
-
-
-// Using var
 var user = "Krishna";
 var user = "Rahul";
-
 console.log(user);
 
-
-// Using let
-// let user = "Krishna";
-// let user = "Rahul";
-// Error: Identifier 'user' has already been declared
+let user = "Krishna";
+let user = "Rahul";
 
 
 
 // Question 8
-
-
 var x = 10;
 let y = 20;
 const z = 30;
@@ -105,7 +85,6 @@ const z = 30;
 x = 100;
 y = 200;
 
-// z = 300; // TypeError: Assignment to constant variable.
 
 console.log(x);
 console.log(y);
@@ -113,9 +92,9 @@ console.log(z);
 
 
 
+// ---------------------------------SECTION-C---------------------------------
+
 // Question 9
-
-
 var x = 10;
 
 if (true) {
@@ -126,40 +105,219 @@ if (true) {
 
 console.log(x);
 
-// console.log(y); // ReferenceError
-// console.log(z); // ReferenceError
-
 
 
 // Question 10
+const name2 = "Krishna";
 
+let age2 = 20;
+age2 = 25;
 
-// const name2 = "Krishna";
+let country = "India";
 
-// let age2 = 20;
-// age2 = 25;
+if (true) {
+    var city2 = "Delhi";
+}
 
-// let country = "India";
+console.log(name2);
+console.log(age2);
+console.log(city2);
+console.log(country);
 
-// if (true) {
-//     var city2 = "Delhi";
-// }
+let score2 = 50;
+score2 = 80;
 
-// console.log(name2);
-// console.log(age2);
-// console.log(city2);
-// console.log(country);
-
-// let score2 = 50;
-// score2 = 80;
-
-// console.log(score2);
-
+console.log(score2);
 
 
 
-// 1. Create an Object
+// --------------------------------SECTION-D-----------------------------------
 
+// Question-11
+console.log(a); // undefined
+console.log(b); // ReferenceError
+console.log(c); // ReferenceError
+
+var a = 10;
+let b = 20;
+const c = 30;
+
+
+
+//Question-12
+var u = "Hello";
+let v = "World";
+const w = "!";
+
+console.log(u);
+console.log(v);
+console.log(w);
+
+console.log(u + " " + v + w);
+
+
+
+// --------------------------------SECTION-E-----------------------------------
+
+// Question-1
+let a = 10;
+console.log(a, typeof a); // 10 number
+
+
+
+// Question-2
+let q = 10.5;
+console.log(q, typeof q); // 10.5 number
+
+
+
+// Question-3
+let a = "Hello World";
+console.log(a, typeof a); // Hello World string
+
+
+
+// Question-4
+let d = true;
+console.log(d, typeof d); // true boolean
+
+
+
+// --------------------------------SECTION-F-----------------------------------
+
+// Question-5
+let a = Symbol("id");
+let m = Symbol("id");
+
+console.log(a === m); // false
+
+let user = {
+    [a]: "User One",
+    [m]: "User Two"
+};
+
+console.log(user[a]); // User One
+console.log(user[m]); // User Two
+
+
+
+// Question-6
+let a = 9007199254740991;
+
+console.log(a + 1); // 9007199254740992
+console.log(a + 2); // 9007199254740992
+console.log(a + 3); // 9007199254740994
+
+let l = 9007199254740991n;
+
+console.log(l + 1n); // 9007199254740992n
+console.log(l + 2n); // 9007199254740993n
+console.log(l + 3n); // 9007199254740994n\
+
+
+
+// Question-7
+let id = Symbol("id");
+let bigNumber = 9007199254740993n;
+let a;
+let x = null;
+
+
+
+// --------------------------------SECTION-G-----------------------------------
+
+// Question-8
+let a;
+let r = null;
+let t = 42;
+let p = "Hello";
+let e = true;
+let f = Symbol("key");
+let g = 123n;
+
+console.log(typeof a, a); // undefined undefined
+console.log(typeof r, r); // object null
+console.log(typeof t, t); // number 42
+console.log(typeof p, p); // string Hello
+console.log(typeof e, e); // boolean true
+console.log(typeof f, f); // symbol Symbol(key)
+console.log(typeof g, g); // bigint 123n
+
+
+
+// Question-9
+let num = 10;
+let text = "Hello";
+let flag = true;
+let emp;
+let nothing = null;
+let unique = Symbol("id");
+let big = 9007199254740991n;
+
+console.log(num, text, flag, emp, nothing, unique, big);        //10 Hello true undefined null Symbol(id) 9007199254740991n
+
+
+
+// Question-10
+
+//-----------------------------------Part-A-----------------------------------
+// What is the main difference between Primitive and Non-Primitive data types?
+
+//-----------------------------------ANSWER-----------------------------------
+// Primitive data types represent a single value.
+// Non-primitive data types can group multiple values or provide more complex structures.
+
+// Example of a primitive:  let age = 18;
+
+// Example of a non-primitive:  let student = {
+//                                              name: "Rahul",
+//                                              age: 18
+//                                            };
+
+
+//-----------------------------------Part-B-----------------------------------
+// Why are Numbers, Strings, Booleans, Undefined, Null, Symbol, and BigInt called Primitive?
+
+//-----------------------------------ANSWER-----------------------------------
+// They are called primitive types because they are JavaScript's basic value types rather than objects.
+// They represent values such as numbers, text, logical states, or the absence of a value.
+
+// Examples:  let num = 10;            // Number
+//            let text = "Hello";      // String
+//            let flag = true;         // Boolean
+//            let a;                   // Undefined
+//            let b = null;            // Null
+//            let id = Symbol("id");   // Symbol
+//            let big = 100n;          // BigInt
+
+
+//----------------------------------Part-C----------------------------------
+// Give one example of a Non-Primitive data type and explain why it is considered Non-Primitive.
+
+//----------------------------------ANSWER-----------------------------------
+// An object is a non-primitive data type because it can store multiple related values as properties.
+// Exapmle:         let student = {
+//                  name: "Rahul",
+//                  age: 18,
+//                  passed: true
+//              };
+                
+//              console.log(student.name);   // Rahul
+//              console.log(student.age);    // 18
+//              console.log(student.passed); // true
+                
+//              console.log(typeof student); // object
+
+// The object stores a name, an age, and a Boolean value together in one structure.
+
+// Arrays and functions are also non-primitive types in JavaScript.
+// Arrays are a kind of object, while functions are callable objects.
+
+
+
+// --------------------------------SECTION-H------------------------------------
+
+// Question 1. Creating an Object
 let student = {
     name: "Riya",
     age: 18,
@@ -172,8 +330,8 @@ console.log(student.age);
 console.log(student.isEnrolled);
 
 
-// 2. Work with Arrays
 
+// Question 2. Working with Arrays
 let scores = [85, 92, 78, 90];
 
 let mixedData = [25, "Hello", true, null];
@@ -185,8 +343,7 @@ console.log(scores[0]); // First element
 console.log(scores[3]); // Last element
 
 
-// 3. Declare and Call a Function
-
+// Question 3. Declaring and Call a Function
 function calculateArea(length, width) {
     return length * width;
 }
@@ -195,8 +352,7 @@ console.log(calculateArea(10, 5));
 console.log(calculateArea(8, 4));
 
 
-// 4. Check Types with typeof
-
+// Question 4. Checking Types with typeof
 let numberValue = 25;
 let stringValue = "Hello";
 let booleanValue = true;
@@ -215,17 +371,11 @@ console.log(objectValue, typeof objectValue);
 console.log(arrayValue, typeof arrayValue);
 console.log(functionValue, typeof functionValue);
 
-/*
-Surprising results:
-
-typeof null      -> "object"
-typeof array     -> "object"
-typeof function  -> "function"
-*/
 
 
-// 5. Valid vs Invalid Variable Names
+// ---------------------------------SECTION-I------------------------------
 
+// Question 5. Valid vs Invalid Variable Names
 // Valid:
 // userName
 // _privateData
@@ -239,8 +389,8 @@ typeof function  -> "function"
 // const      -> Reserved keyword
 
 
-// 6. Apply Best Practices
 
+// Question 6. Apply Best Practices
 const length = 10;
 const width = 5;
 const area = length * width;
@@ -250,8 +400,8 @@ console.log(area);
 console.log(MAX_VALUE);
 
 
-// 7. Declaration & Assignment
 
+// Question 7. Declaration & Assignment
 // let age;
 // age = 18;
 
@@ -264,8 +414,10 @@ console.log(MAX_VALUE);
 // console.log(country);
 
 
-// 8. Predict the Output
 
+// ----------------------------SECTION-J---------------------------
+
+// Question 8. Predict the Output
 let person = {
     name: "Amit",
     age: 22
@@ -287,26 +439,9 @@ console.log(person.name);     // Amit
 console.log(colors[1]);       // green
 console.log(sayHi());         // Hi!
 
-/*
-Reasoning:
-
-typeof person -> "object"
-Objects have the type "object".
-
-typeof colors -> "object"
-Arrays are technically objects in JavaScript.
-
-typeof sayHi -> "function"
-Functions have the special typeof result "function".
-
-typeof empty -> "object"
-This is a historical JavaScript behavior.
-null itself means "no value", but typeof null returns "object".
-*/
 
 
-// 9. Fix the Program
-
+// Question 9. Fix the Program
 let student1 = {
     name: "Neha",
     age: 19
@@ -325,10 +460,11 @@ console.log(scores2[0]);
 console.log(greet("Neha"));
 
 
-// 10. Concept Questions
-
+// Question 10. Concept Questions
 /*
-a) Object vs Array
+--------------------------PART-A------------------------
+
+Object vs Array
 
 Object stores data using key-value pairs.
 
@@ -350,7 +486,10 @@ Array:
 colors[0]
 
 
-b) Why does typeof null return "object"?
+
+-----------------------------PART-B-----------------------------
+
+Why does typeof null return "object"?
 
 typeof null returns "object" because of an old historical
 behavior in JavaScript.
@@ -363,7 +502,10 @@ let data = null;
 null is NOT actually an object.
 
 
-c) Why is it recommended to keep arrays with a single data type?
+
+-----------------------------PART-C------------------------------
+
+Why is it recommended to keep arrays with a single data type?
 
 Keeping the same type makes arrays easier to understand,
 process, and maintain.
@@ -379,7 +521,10 @@ A mixed array can be confusing:
 let data = [85, "Hello", true, null];
 
 
-d) When should you use const and let?
+
+-----------------------------PART-D----------------------------------
+
+When should you use const and let?
 
 Use const when the variable should not be reassigned.
 
